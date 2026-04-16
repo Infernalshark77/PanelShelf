@@ -1,0 +1,10 @@
+fastapi>=0.135,<0.136
+uvicorn[standard]>=0.35,<0.36
+sqlalchemy>=2.0,<2.1
+pydantic-settings>=2.8,<2.9
+python-multipart>=0.0.20,<0.0.21
+Pillow>=11.2,<11.3
+PyMuPDF>=1.25,<1.26
+rarfile>=4.2,<4.3
+itsdangerous>=2.2,<2.3
+psycopg[binary]>=3.2,<3.3
