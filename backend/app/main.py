@@ -48,8 +48,8 @@ if (frontend_dist / "index.html").exists():
     app.mount("/", SPAStaticFiles(directory=frontend_dist, html=True), name="spa")
 
 
-@app.get("/")
-def index() -> FileResponse | dict[str, str]:
+@app.get("/", response_model=None)
+def index():
     if (frontend_dist / "index.html").exists():
         return FileResponse(frontend_dist / "index.html")
     return {"message": f"{settings.app_name} backend is running."}
